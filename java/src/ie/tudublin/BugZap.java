@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class BugZap extends PApplet {
 	public void settings() {
-		size(1000, 1000);
+		size(500, 500);
 	}
 
 	public void setup() {
@@ -16,7 +16,7 @@ public class BugZap extends PApplet {
 	float playerWidth = 40;
 	float halfPlayerWidth = playerWidth / 2;
 
-	float bugX, bugY, bugWidth = 100;
+	float bugX, bugY, bugWidth = 30;
 	float halfBugWidth = bugWidth / 2;
 
 	int score = 0;
@@ -72,7 +72,6 @@ public class BugZap extends PApplet {
 	}
 
 	public void keyPressed() {
-		
 		if (keyCode == LEFT) {
 			if (playerX > halfPlayerWidth) {
 				playerX -= playerSpeed;
@@ -115,8 +114,6 @@ public class BugZap extends PApplet {
 
 	public void draw() {
 		background(0);
-		fill(255);
-		text("Score: " + score, 50, 100);
 		if (gameMode == 0)
 		{
 			fill(255);
