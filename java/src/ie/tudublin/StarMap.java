@@ -6,8 +6,6 @@ import processing.core.PApplet;
 import processing.data.Table;
 import processing.data.TableRow;
 
-import processing.data.*;
-
 public class StarMap extends PApplet {
 
     ArrayList<Star> stars = new ArrayList<Star>();
